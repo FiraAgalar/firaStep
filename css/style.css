@@ -1,0 +1,149 @@
+:root {
+    --red: #fd634e; 
+	--green: #a2ca28;
+	--gray: #656e74;
+}
+header {
+	height: 100vh;
+	background: url("../img/happy.jpg") no-repeat center/cover fixed;
+	position: relative;
+	overflow: hidden;
+}
+nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	z-index: 99;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+nav li {
+	margin: 0 5px;
+}
+nav a{
+	color: white;
+	white-space: nowrap;
+	text-decoration: none;
+	text-transform: uppercase;
+	font: normal 1em Arial;
+	display: none;
+	padding-bottom: 10px;
+}
+.over a {
+	display: block;
+}
+nav img {
+	height: 47px;
+}
+#mobinav {
+	display: block;
+	font-size: 2em;
+}
+
+#slogan{
+	font-family: Arial;
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 15vh;
+	left: 15%;
+}
+header h1{
+	font-size: 2.8em;
+}
+header h1 span {
+	 color: var(--green);
+}
+header p{
+	font-size: 1em;
+	padding: 10px 200px; 
+}
+header p span{
+	color: var(--red);
+}
+#fignya1 {
+	width: 100%;
+	height: 100px;
+	background: var(--red);
+	position: absolute;
+	bottom: -50px;
+	opacity: 0.3;
+	transform: rotate(-2deg);
+}
+#one{
+	height:1200px;
+	background: var(--green);
+
+}
+.container {
+	max-width: 1180px;
+	margin: auto;
+}
+.redactor {
+	margin: 20px;
+}
+.redactor i {
+	color: white;
+}
+ .redactor h5 {
+	font: normal 1.1em Arial;
+	color: white;
+	padding: 20px 0;
+ }
+ .redactor p {
+	font: normal 0.9em Arial;
+	color: white;
+	padding: 5px;
+ }
+ .redactor a {
+	font: normal 0.8em Arial;
+	color: white;
+	padding-top: 13px;
+	text-decoration: none;
+ }
+#one1 {
+	display: flex;
+	flex-direction: column;
+	padding: 110px 0;
+}
+#two {
+	height:1200px;
+	background:var(--red);
+}
+footer{
+	height: 1500px;
+	background: #0d1119;
+}
+@media only screen and (min-width: 600px) {
+   #mobinav {display: none;}
+   nav a {display: block;
+   font-size: 1em;}
+   nav ul {
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+}
+	.redactor {
+		width: 50%;
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 850px) {
+    nav{padding: 30px 40px;}
+	nav ul{padding-top: 20px;}
+	nav li {margin: 15px;}
+	nav a{font: normal 1.2em Arial;}
+	#one1 {
+	display: flex;
+	flex-direction: row;
+	}
+.redactor {
+		width: 50%;
+		margin: auto;
+	}
+}
+
